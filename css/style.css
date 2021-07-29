@@ -40,12 +40,20 @@ div{
 	border: 1px solid #000;
 	padding: 10px;
 }
-.phone-img,
-.messengers__item-img{
-	width: 25px;
-	height: 25px;
+.header-img_sm{
+	height: 30px;
 }
-.logotype-img{
+.header__logotype-img{
 	width: 210px;
 	height: 66px;
+}
+.flex{
+	display: flex;
+}
+.column{
+	display: flex;
+	flex-direction: column;
+}
+.hidden{
+	display: none;
 }
