@@ -3,6 +3,7 @@
 let offerItem1 = document.querySelector('.offer__item1');
 let offerItem2 = document.querySelector('.offer__item2');
 let offerItem3 = document.querySelector('.offer__item3');
+let offerItem = document.querySelectorAll('.offer__item');
 
 let offerPrice1 = document.querySelector('.offer__item-price1');
 let offerPrice2 = document.querySelector('.offer__item-price2');
@@ -52,3 +53,33 @@ offerItem3.addEventListener('mouseout', () => {
 	offerAuthor3.classList.remove('hidden');
 })
 
+// let offerItem = document.querySelectorAll('.offer__item');
+// let offerPrice = document.querySelectorAll('.offer__item-price');
+// let offerButton = document.querySelectorAll('.offer__item-button');
+// let offerAuthor = document.querySelectorAll('.offer__item-author');
+
+
+// for (let item of offerItem) {
+// 	item.addEventListener('mouseover', function () {
+// 		for (let itemPrice of offerPrice) {
+// 			itemPrice.classList.add('hidden');
+// 		}
+// 		for (let itemAuthor of offerAuthor) {
+// 			itemAuthor.classList.add('hidden');
+// 		}
+// 		for (let itemButton of offerButton) {
+// 			itemButton.classList.remove('hidden');
+// 		}
+// 	})
+// 	item.addEventListener('mouseout', function () {
+// 		for (let itemPrice of offerPrice) {
+// 			itemPrice.classList.remove('hidden');
+// 		}
+// 		for (let itemAuthor of offerAuthor) {
+// 			itemAuthor.classList.remove('hidden');
+// 		}
+// 		for (let itemButton of offerButton) {
+// 			itemButton.classList.add('hidden');
+// 		}
+// 	})
+// }
