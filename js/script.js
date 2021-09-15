@@ -1,12 +1,19 @@
 'use strict'
 
-let offerItem = document.querySelectorAll('.offer__item');
+const offerItem = document.querySelectorAll('.offer__item');
 
-let offerPrice = document.querySelectorAll('.offer__item-price');
+const offerPrice = document.querySelectorAll('.offer__item-price');
 
-let offerAuthor = document.querySelectorAll('.offer__item-author');
+const offerAuthor = document.querySelectorAll('.offer__item-author');
 
-let offerButton = document.querySelectorAll('.offer__item-button');
+const offerButton = document.querySelectorAll('.offer__item-button');
+
+const btnLike = document.querySelectorAll('.offer__button-like');
+
+const likeCounter = document.getElementById('header-like');
+
+wrapperLike();
+
 
 offerItem.forEach((item, index) => {
 
@@ -22,3 +29,23 @@ offerItem.forEach((item, index) => {
 		offerButton[index].classList.add('hidden');
 	})
 })
+
+function wrapperLike() {
+	let count = 0;
+
+	for (let i = 0; btnLike.length > i; i++) {
+		btnLike[i].addEventListener('click', like);
+	}
+
+	function like() {
+		this.classList.toggle('active-like');
+		if (this.classList.contains('active-like') == true) {
+			count++;
+		} else {
+			count--;
+		}
+		likeCounter.textContent = count;
+	}
+}
+
+

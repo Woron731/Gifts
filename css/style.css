@@ -441,6 +441,12 @@ overflow: hidden;
 	opacity: 0.7;
 	transition-duration: 1s;
 	border: 2px dashed rgb(156, 50, 50);
+	background-color: rgb(226, 105, 105);
+}
+.active-like{
+	background-color: rgb(226, 105, 105);
+	border: 2px dashed rgb(156, 50, 50);
+	transition-duration: 1s;
 }
 .offer__button-like-link {
 }
